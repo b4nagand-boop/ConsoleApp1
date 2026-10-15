@@ -10,18 +10,27 @@
 //     Console.WriteLine(i);
 // }
 
-Console.Write("Az intervallum alsó végpontja > ");
-int alsoVegpont = int.Parse(Console.ReadLine());
-Console.Write("Az intervallum felső végpontja > ");
-int felsoVegpont = int.Parse(Console.ReadLine());
+// Console.Write("Az intervallum alsó végpontja > ");
+// int alsoVegpont = int.Parse(Console.ReadLine());
+// Console.Write("Az intervallum felső végpontja > ");
+// int felsoVegpont = int.Parse(Console.ReadLine());
 
-int parosSzamOsszeg = 0;
-for (int i = alsoVegpont; i <= felsoVegpont; i++)
+// int parosSzamOsszeg = 0;
+// for (int i = alsoVegpont; i <= felsoVegpont; i++)
+// {
+//     if (i%2 == 0)
+//     {
+//         parosSzamOsszeg += i;
+//     }
+// }
+
+// Console.WriteLine($"A(z) [{alsoVegpont}; {felsoVegpont}] intervallumba eső páros számok összege > {parosSzamOsszeg}");
+
+for (int i = 1; i <= 10; i++)
 {
-    if (i%2 == 0)
+    for (int j = 1; j <= 10; j++)
     {
-        parosSzamOsszeg += i;
+        Console.Write($"{j*i} ");
     }
+    Console.WriteLine();
 }
-
-Console.WriteLine($"A(z) [{alsoVegpont}; {felsoVegpont}] intervallumba eső páros számok összege > {parosSzamOsszeg}");
