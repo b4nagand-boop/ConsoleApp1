@@ -47,9 +47,31 @@
 
 
 
-int x = 0;
-do
+// int x = 0;
+// do
+// {
+//     Console.Write("Adj meg egy számot > ");
+//     x = int.Parse(Console.ReadLine());
+// } while (x <= 0);
+
+
+
+
+List<string> autok = new();
+autok.Add("McLaren");
+autok.Add("Honda");
+autok.Add("BMW");
+autok.Add("Renault");
+autok.Add("BYD");
+autok.Add("Tesla");
+autok.Add("Subaru");
+
+Console.WriteLine(autok);
+Console.WriteLine(autok[0]);
+//autok.Remove("McLaren");
+Console.WriteLine(autok.Count);
+
+foreach (string auto in autok)
 {
-    Console.Write("Adj meg egy számot > ");
-    x = int.Parse(Console.ReadLine());
-} while (x <= 0);
+    Console.WriteLine(auto);
+}
