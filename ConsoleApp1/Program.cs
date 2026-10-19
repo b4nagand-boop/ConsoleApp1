@@ -26,11 +26,19 @@
 
 // Console.WriteLine($"A(z) [{alsoVegpont}; {felsoVegpont}] intervallumba eső páros számok összege > {parosSzamOsszeg}");
 
-for (int i = 1; i <= 10; i++)
+// for (int i = 1; i <= 10; i++)
+// {
+//     for (int j = 1; j <= 10; j++)
+//     {
+//         Console.Write($"{j*i} ");
+//     }
+//     Console.WriteLine();
+// }
+
+
+int x = 0;
+do
 {
-    for (int j = 1; j <= 10; j++)
-    {
-        Console.Write($"{j*i} ");
-    }
-    Console.WriteLine();
-}
+    Console.Write("Adj meg egy számot > ");
+    x = int.Parse(Console.ReadLine());
+} while (x <= 0);
