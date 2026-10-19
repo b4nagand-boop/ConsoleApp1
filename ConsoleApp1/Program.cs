@@ -5,10 +5,16 @@
 //     Console.WriteLine("Laci");
 // }
 
+
+
+
 // for (int i = 100; i >= 0; i--)
 // {
 //     Console.WriteLine(i);
 // }
+
+
+
 
 // Console.Write("Az intervallum alsó végpontja > ");
 // int alsoVegpont = int.Parse(Console.ReadLine());
@@ -26,6 +32,9 @@
 
 // Console.WriteLine($"A(z) [{alsoVegpont}; {felsoVegpont}] intervallumba eső páros számok összege > {parosSzamOsszeg}");
 
+
+
+
 // for (int i = 1; i <= 10; i++)
 // {
 //     for (int j = 1; j <= 10; j++)
@@ -34,6 +43,8 @@
 //     }
 //     Console.WriteLine();
 // }
+
+
 
 
 int x = 0;
