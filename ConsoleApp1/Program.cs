@@ -57,21 +57,99 @@
 
 
 
-List<string> autok = new();
-autok.Add("McLaren");
-autok.Add("Honda");
-autok.Add("BMW");
-autok.Add("Renault");
-autok.Add("BYD");
-autok.Add("Tesla");
-autok.Add("Subaru");
+// List<string> autok = new();
+// autok.Add("McLaren");
+// autok.Add("Honda");
+// autok.Add("BMW");
+// autok.Add("Renault");
+// autok.Add("BYD");
+// autok.Add("Tesla");
+// autok.Add("Subaru");
 
-Console.WriteLine(autok);
-Console.WriteLine(autok[0]);
-//autok.Remove("McLaren");
-Console.WriteLine(autok.Count);
+// Console.WriteLine(autok);
+// Console.WriteLine(autok[0]);
+// //autok.Remove("McLaren");
+// Console.WriteLine(autok.Count);
 
-foreach (string auto in autok)
-{
-    Console.WriteLine(auto);
+// foreach (string auto in autok)
+// {
+//     Console.WriteLine(auto);
+// }
+
+
+
+
+// Console.Write("Add meg a csoki gyártási sorszámát > ");
+// int sorszam = int.Parse(Console.ReadLine());
+
+// bool vanEOszto = false;
+// for (int i = 2; i < sorszam; i++)
+// {
+//     if (sorszam % i == 0)
+//     {
+//         vanEOszto = true;
+//     }
+// }
+
+// if (sorszam <= 1 || vanEOszto)
+// {
+//     Console.WriteLine("Sajnos nem nyert!");    
+// } else
+// {
+//     Console.WriteLine("Gratulálunk, nyertél!");
+// }
+
+
+
+
+// List<string> gyumolcsok = new();
+// for (int i = 1; i <= 5; i++) {
+//     Console.Write($"Add meg az {i}. gyümölcsöt > ");
+//     gyumolcsok.Add(Console.ReadLine());
+// }
+
+// Console.Write("\n[");
+// foreach(string gyumolcs in gyumolcsok) {
+//     if (gyumolcs == gyumolcsok.Last()) {
+//         Console.Write($"'{gyumolcs}'");
+//     } else {
+//         Console.Write($"'{gyumolcs}', ");
+//     }
+// }
+// Console.Write("]");
+
+
+
+
+List<int> jegyek = new();
+for (int i = 1; i <= 10; i++) {
+    Console.Write($"Add meg az {i}. tanuló jegyét > ");
+    jegyek.Add(int.Parse(Console.ReadLine()));
 }
+
+int osszeg = 0;
+Console.Write("\nJegyek > ");
+foreach(int jegy in jegyek) {
+    Console.Write($"{jegy} ");
+    osszeg += jegy;
+}
+
+float atlag = osszeg/jegyek.Count;
+
+Console.WriteLine($"\nAz osztály átlaga > {atlag}");
+
+Console.Write("\nJegyek sorrend > ");
+jegyek.Sort();
+foreach(int jegy in jegyek) {
+    Console.Write($"{jegy} ");
+}
+
+Console.Write("\nJegyek sorrend2 > ");
+jegyek.Reverse();
+foreach(int jegy in jegyek) {
+    Console.Write($"{jegy} ");
+}
+
+Console.WriteLine($"\nLegjobb jegy > {jegyek.Max()}");
+Console.WriteLine($"Legrosszabb jegy > {jegyek.Min()}");
+
